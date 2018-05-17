@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  <style>
+
+   * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  ul {
+    list-style: none;
+    word-wrap: break-word;
+  } 
+
+  .hide {
+    display: none;
+  } 
+
+  </style>
+</head>
+<body>
+  <div class="col-lg-12">
+  <div class="col-lg-4">
+    <ul class="pages">  
+    <li class="loginInput">
+      <div class="col-md-12 col-md-offset-0">
+      <div class="form-group">
+        <h3 class="title">Whats your nickname?</h3>
+        <input class="usernameInput form-control" type="text" name="name">
+      </div>
+      </div>
+    </li>
+    <li class="chatInput hide">
+      <div class="col-md-12 col-md-offset-0">
+      <div class="form-group">
+        <input class="messageInput form-control" type="text" name="message">
+      </div>
+      <div>
+        <input class="btn btn-lg btn-block" type="submit" value="Send">
+      </div>
+      </div>
+    </li>
+    </ul>
+  </div>  
+  <div class="col-lg-8">
+    <div class="chatArea form-group">
+    <ul class="messages"></ul>
+    </div>
+  </div>  
+  </div>  
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+
+</body>
+</html>
